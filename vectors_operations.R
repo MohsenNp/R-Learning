@@ -12,3 +12,4 @@ mean(x = arr, trim = 0.1, na.rm = TRUE) # trim
 # if you call mean() on arr without na.rm = TRUE --> returns NA
 
 
+
