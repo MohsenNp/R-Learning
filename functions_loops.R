@@ -107,7 +107,7 @@ ifelse(vec == 1, vec * 3, "zero") # elementwise check on vectors (All of element
 
 vec[2] <- NA
 ifelse(vec == 1, vec*3, "Zero") # it does not change NA to "Zero"
-ifelse(vec == NA, NULL, vec) # does not work
+ifelse(is.na(vec), 0, vec) # replace NA with 0
 
 ifelse(vec == 1, vec, ifelse(x == 2, "Hi", "Bye!")) # Nested ifelse statements
 
